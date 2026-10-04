@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uniform Shop - Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Uniform Shop</header>
+
+    <nav>
+        <a href="index.html">Sheet</a>
+        <a href="till.html">Till</a>
+        <a href="who.html">Who is in</a>
+    </nav>
+
+    <main>
+        <h2>Sheet</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Line</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody id="sheetBody"></tbody>
+        </table>
+
+        <h3>Total: <span id="total">0</span></h3>
+        <p>Kind of total: <span id="totalKind"></span></p>
+        <p>Kind of last Note: <span id="noteKind"></span></p>
+        <p id="priceMatch"></p>
+        <p id="sameKind"></p>
+        <p id="lineKind"></p>
+
+        <form id="itemForm">
+            <input id="item" type="text" placeholder="Item">
+            <input id="quantity" type="number" placeholder="Quantity">
+            <input id="price" type="text" placeholder="Price">
+            <button type="submit">Add</button>
+        </form>
+    </main>
+
+    <footer>247219</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
